@@ -1,1 +1,0 @@
-# tugaspertemuanke3

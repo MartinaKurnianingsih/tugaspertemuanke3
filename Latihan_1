@@ -1,0 +1,40 @@
+# tugaspertemuanke3
+
+#include <iostream>
+
+/* TUGAS MATA KULIAH ALGORITMA*/
+/* NAMA MARTINA KURNIANINGSIH PRODI SISTEM INFORMASI */
+using namespace std;
+
+int main(int argc, char** argv) 
+
+{
+	cout<<"menampilkan deret bilangan"<<endl;/* 1,1,2,3,4,5,8,13 */
+	cout<<"latihan 1"<<endl;
+	cout<<"martina kurnianingsih"<<endl;
+		
+	
+    int n, f1 = 0, f2 =1,jumlah =0;
+    cout << "inputkan suku deret ke delapan (8)  : "; /* karena yang akan di tampilkan deret bilangan 1,1,2,3,4,5,8,13 */
+    cin >> n;
+    cout << "suku deret bilangan ke delapan (8) yaitu : ";/* hasil untuk ,menampilkan deret bilangan */
+    
+    for (int i = 1; i <= n; i++) 
+	{
+        if(i == 1) {
+            cout << f1 << ", ";
+            continue;
+        }
+        if(i == 2) {
+            cout << f2 << ", ";
+            continue;
+        }
+        jumlah = f1 + f2;
+        f1 = f2;
+        f2 = jumlah;
+        
+        cout << jumlah << ", ";
+    }
+ 
+	return 0;
+}
